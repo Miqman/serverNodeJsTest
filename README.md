@@ -1,5 +1,22 @@
 # serverNodeJsTest
 
+# How to use
+
+1. clone this repo and open in visual studio code
+2. in terminal vs code run 'npm i' first
+3. then type these commands in order
+
+   - npx sequelize db:create
+   - npx sequelize db:migrate
+   - npx sequelize db:seed:all
+
+4. running code with type 'nodemon app.js'
+5. open postman and import the collection that has been downloaded ('e2e-food.postman_collection')
+6. try register and login firts
+7. after login you will get access_token. copy that because you will need to access endpoints 'post', 'put', 'patch' and delete.
+
+### Endpoint deploy https://food-server-app.herokuapp.com/foods
+
 # food API Documentation
 
 List of available endpoints:
