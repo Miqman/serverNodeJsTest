@@ -1,0 +1,66 @@
+[
+  {
+    "name": "Burger",
+    "description": "FastFood enak langsung makan",
+    "imageUrl": "https://foto.kontan.co.id/s0VRkMh0kfKeu-aE5k836PeMRpg=/smart/2022/01/06/221687372p.jpg",
+    "price": "25000",
+    "UserId": 1,
+    "CategoryId": 1
+  },
+  {
+    "name": "Kebab",
+    "description": "FastFood enak langsung makan",
+    "imageUrl": "https://images.tokopedia.net/img/cache/500-square/product-1/2019/1/10/5196171/5196171_d9d999fd-ee02-497b-9c2b-582104580ddc_900_900.jpg",
+    "price": "15000",
+    "UserId": 1,
+    "CategoryId": 1
+  },
+  {
+    "name": "Kentang Goreng",
+    "description": "FastFood enak langsung makan",
+    "imageUrl": "https://img.okezone.com/content/2019/09/09/298/2102647/8-fakta-soal-kentang-goreng-gak-selalu-buruk-kok-GfMjIWfNRW.jpg",
+    "price": "10000",
+    "UserId": 1,
+    "CategoryId": 1
+  },
+  {
+    "name": "Hotdog",
+    "description": "FastFood enak langsung makan",
+    "imageUrl": "https://img.okezone.com/content/2017/08/21/298/1759789/hotdog-termasuk-dalam-6-makanan-paling-berbahaya-di-dunia-at6oqE9tQv.jpg",
+    "price": "25000",
+    "UserId": 1,
+    "CategoryId": 1
+  },
+  {
+    "name": "Es Teh Manis",
+    "description": "Seger diminum setelah makan bakso",
+    "imageUrl": "https://assets.pikiran-rakyat.com/crop/0x0:0x0/x/photo/2020/10/09/922223947.jpg",
+    "price": "8000",
+    "UserId": 1,
+    "CategoryId": 2
+  },
+  {
+    "name": "Boba gula aren",
+    "description": "minuman kekinian yang lagi rame",
+    "imageUrl": "https://asset.kompas.com/crops/aP_98iCv79Qo41hFBjRvIQ8YyG8=/0x0:1000x667/750x500/data/photo/2019/09/26/5d8c4fff5f34c.jpg",
+    "price": "15000",
+    "UserId": 1,
+    "CategoryId": 2
+  },
+  {
+    "name": "Thai tea",
+    "description": "minum sekali berasa di thailand",
+    "imageUrl": "https://fibercreme.com/wp-content/uploads/2021/04/Bubble-Thai-Tea-3.jpg",
+    "price": "15000",
+    "UserId": 1,
+    "CategoryId": 2
+  },
+  {
+    "name": "Jus Buah Alpukat",
+    "description": "minuman sehat yang nagih",
+    "imageUrl": "https://awsimages.detik.net.id/community/media/visual/2019/09/20/1a5fe9ba-ffa9-4ada-acd9-f2d913e6b06b.jpeg?w=700&q=90",
+    "price": "25000",
+    "UserId": 1,
+    "CategoryId": 2
+  }
+]
