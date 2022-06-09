@@ -15,6 +15,7 @@ class FoodController {
       if (!foodCache) {
         const foods = await Food.findAll({
           include: Category,
+          order: ["id"],
         });
 
         await redis.set("foodCache", JSON.stringify(foods));
@@ -28,9 +29,10 @@ class FoodController {
       }
     } catch (error) {
       next(error);
-      console.log(error);
+      // console.log(error);
     }
   }
+
   static async getOneFood(req, res, next) {
     try {
       const { id } = req.params;
@@ -48,7 +50,7 @@ class FoodController {
       });
     } catch (error) {
       next(error);
-      console.log(error);
+      // console.log(error);
     }
   }
 
@@ -65,13 +67,14 @@ class FoodController {
         UserId: req.user.id,
       });
 
+      await redis.del("foodCache");
       res.status(201).json({
         Code: 201,
         message: "Food created successfully",
         data: newFood,
       });
     } catch (error) {
-      console.log(error);
+      // console.log(error);
       next(error);
     }
   }
@@ -101,13 +104,15 @@ class FoodController {
         throw { name: "Data not found" };
       }
 
+      await redis.del("foodCache");
+
       res.status(200).json({
         Code: 200,
         message: "Edit Food successfully",
         data: food,
       });
     } catch (error) {
-      console.log(error);
+      // console.log(error);
       next(error);
     }
   }
@@ -131,13 +136,13 @@ class FoodController {
         };
       }
 
-      // console.log(newHistory);
+      await redis.del("foodCache");
       res.status(200).json({
         statusCode: 200,
         data: getFood,
       });
     } catch (error) {
-      console.log(error);
+      // console.log(error);
       next(error);
     }
   }
@@ -154,8 +159,10 @@ class FoodController {
       if (removeFood <= 0) {
         throw { name: "Data not found" };
       }
+
+      await redis.del("foodCache");
       res.status(200).json({
-        statusCode: 200,
+        Code: 200,
         message: `Food with id ${id} success to delete`,
       });
     } catch (error) {
